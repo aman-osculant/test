@@ -1,0 +1,106 @@
+.mobile{
+    display: none;
+  }
+  .web{
+    display: block;
+  }
+  .closebtn{
+    display: none;
+  }
+  
+  @media(max-width:768px){
+    .mobile{
+      display: block;
+    }
+    .web{
+      display: none;
+    }
+    .closebtn{
+      display: block;
+    }
+  
+  }
+  
+  
+  
+  
+  .overlay {
+    height: 100%;
+    width:0%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #1F282D;
+    
+    
+    transition: 0.5s;
+    overflow: hidden;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .show{
+    width: 17%;
+    transition: 0.5s;
+  }
+  
+  @media(max-width:768px){
+    .show{
+      width: 70%;
+      transition: 0.5s;
+    }
+    
+  }
+  
+  .overlay-content {
+       position: relative;
+      top: 9%;
+      width: 100%;
+      text-align: center;
+  }
+  
+  
+  .overlay p {
+      padding: 8px;
+      text-decoration: none;
+      
+      color: gray;
+      display: block;
+      transition: 0.3s;
+      /*border: 1px solid white;*/
+      margin: 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      font-weight: 200;
+      /*box-shadow: 0 0 0px 0 rgb(0 0 0 / 10%), 0 0px 8px 0 rgb(0 0 0 / 19%);*/
+      margin-top: 4px;
+      text-align: initial;
+      font-size: 1.2rem;
+      
+      
+  }
+  
+  
+  
+  @media(max-width:768px){
+    .overlay p{
+      font-size: 1rem;
+    }
+  }
+  
+  
+  
+  .overlay .a:hover, .overlay .a:focus {
+    color: brown;
+    border-left: 5px solid brown;
+    text-decoration: none;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+      top: 7px;
+      font-size: 20px;
+      right: 14px;
+  }
+  
+  
